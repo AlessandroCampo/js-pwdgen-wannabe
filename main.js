@@ -1,6 +1,7 @@
 let name_field = document.getElementById("fname")
 let surname_field = document.getElementById("lname")
 let fav_color_field = document.getElementById("fav_color")
+let fav_character_field = document.getElementById("fav_character")
 let animal_name_field = document.getElementById("cat_name")
 let button = document.getElementById("generate_pass")
 let clear_button = document.getElementById("clear")
@@ -21,7 +22,8 @@ button.onclick = () => {
     surname = surname_field.value
     animal_name = animal_name_field.value
     fav_color = fav_color_field.value
-    let datalist = [fname, surname, animal_name, fav_color]
+    fav_character = fav_character_field.value
+    let datalist = [fname, surname, animal_name, fav_color, fav_character]
     let twoRandomValues = []
     let random_number = Math.floor(Math.random() * 100)
     let random_special_character = special_character[Math.floor(Math.random() * special_character.length)]
