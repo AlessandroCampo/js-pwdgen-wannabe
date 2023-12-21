@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="banner">
+            <img src="img/hacker.png" alt="">
+            <h2>Anti-Hacker Password Generator</h2>
+        </div>
+        <form>
+            <label for="fname">Inserisci il tuo nome: </label><br>
+            <input type="text" id="fname" name="fname" placeholder="Mario"><br>
+            <label for="lname">Inserisci il tuo cognome:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Rossi"><br>
+            <label for="fav_color">Inserisci il tuo colore preferito:</label><br>
+            <input type="text" id="fav_color" name="fav_color" placeholder="Verde"><br>
+            <label for="fav_character">Inserisci il tuo personaggio di fantasia preferito:</label><br>
+            <input type="text" id="fav_character" name="fav_character" placeholder="Goku"><br>
+            <label for="cat_name">Inserisci il nome del tuo animale domestico:</label><br>
+            <input type="text" id="cat_name" name="cat_name" placeholder="Romeo"><br>
+            <input type="reset" value="Svuota" id="clear">
+
+        </form>
+        <p>
+            La tua password hackerproof è: <span id="newPass"></span>
+        </p>
+        <button id="generate_pass">Genera la tua password!</button>
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
